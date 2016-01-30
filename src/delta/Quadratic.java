@@ -22,8 +22,8 @@ public class Quadratic {
 	this.delta = (b*b) - (4*a*c);
 	
 	if(this.delta > 0) {
-	    this.x1 = (-b-Math.sqrt(this.delta))/(2*a);
-	    this.x2 = (-b+Math.sqrt(this.delta))/(2*a);
+	    this.x1 = ((-b)-(Math.sqrt(this.delta)))/(2*a);
+	    this.x2 = ((-b)+Math.sqrt(this.delta))/(2*a);
 	} else if (this.delta == 0) {
 	    this.x1 = (-b)/(2*a);
 	    this.x2 = this.x1;
@@ -51,6 +51,6 @@ public class Quadratic {
     
     @Override
     public String toString() {
-	return this.a + "x^2" + this.b + "x" + this.c;
+	return this.a + "x^2" + ((this.b > 0) ? "+" : "") + this.b + "x" + ((this.c > 0) ? "+" : "") + this.c;
     }
 }
