@@ -29,7 +29,6 @@ public class QuadraticTest {
      */
     @Test
     public void testGetX1() {
-	System.out.println("getX1");
 	double expResult = 2-(Math.sqrt(7.0/2.0));
 	double result = this.instance.getX1();
 	assertEquals(expResult, result, 0.0);
@@ -40,7 +39,6 @@ public class QuadraticTest {
      */
     @Test
     public void testGetX2() {
-	System.out.println("getX2");
 	double expResult = 2+(Math.sqrt(7.0/2.0));
 	double result = this.instance.getX2();
 	assertEquals(expResult, result, 0.0);
@@ -51,7 +49,6 @@ public class QuadraticTest {
      */
     @Test
     public void testGetDelta() {
-	System.out.println("getDelta");
 	double expResult = 224;
 	double result = this.instance.getDelta();
 	assertEquals(expResult, result, 0.0);
@@ -62,7 +59,6 @@ public class QuadraticTest {
      */
     @Test
     public void testHasAnswer() {
-	System.out.println("hasAnswer");
 	boolean expResult = true;
 	boolean result = this.instance.hasAnswer();
 	assertEquals(expResult, result);
@@ -73,7 +69,6 @@ public class QuadraticTest {
      */
     @Test
     public void testToString() {
-	System.out.println("toString");
 	String expResult = "4.0x^2-16.0x+2.0";
 	String result = this.instance.toString();
 	assertEquals(expResult, result);
